@@ -1,0 +1,15 @@
+.page {
+  width: 280px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 40px 40px 40px 0;
+  display: flex;
+  align-items: center;
+}
+.page-inner {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden auto;
+  text-align: right;
+}

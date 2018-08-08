@@ -1,6 +1,6 @@
 <template>
-  <section class="page-profile">
-    <div class="inner">
+  <section class="page">
+    <div class="page-inner">
       <h2 class="heading">山田太郎・Taro YAMADA</h2>
       <p class="paragraph">
         名古屋を中心に活動するエンジニアです<br>
@@ -24,21 +24,6 @@
 </template>
 
 <style scoped>
-.page-profile {
-  width: 280px;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: 0;
-  padding: 40px 40px 40px 0;
-  display: flex;
-  align-items: center;
-}
-.inner {
-  width: 100%;
-  max-height: 100%;
-  overflow: hidden auto;
-  text-align: right;
-}
 .heading {
   line-height: 1.5;
   font-size: 16px;
