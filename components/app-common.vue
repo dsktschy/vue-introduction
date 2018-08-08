@@ -1,6 +1,6 @@
 <template>
-  <div :class="[ 'app-common', { 'is-offset': $route.path !== '/' } ]">
-    <div class="image">
+  <div :class="[ 'app-common', { 'app-common-offset': $route.path !== '/' } ]">
+    <div :class="[ 'image', `image-${imageNumber}` ]">
       <div class="content">
         <h1 class="heading">
           <nuxt-link to="/">山田太郎・Taro YAMADA</nuxt-link>
@@ -23,6 +23,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+    imageNumber: { type: Number, default: 1 }
+  }
+}
+</script>
+
 <style scoped>
 .app-common {
   position: fixed;
@@ -32,17 +40,25 @@
   height: 100vh;
   padding: 40px;
   transition: transform .3s ease;
-  &.is-offset {
-    transform: translateX(-280px);
-  }
+}
+.app-common-offset {
+  transform: translateX(-280px);
 }
 .image {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(~/assets/images/image-1.jpg);
   background-size: cover;
   background-position: center;
+}
+.image-1 {
+  background-image: url(~/assets/images/image-1.jpg);
+}
+.image-2 {
+  background-image: url(~/assets/images/image-2.jpg);
+}
+.image-3 {
+  background-image: url(~/assets/images/image-3.jpg);
 }
 .content {
   position: absolute;
