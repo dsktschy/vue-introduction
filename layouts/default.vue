@@ -1,8 +1,19 @@
 <template>
   <div>
+    <app-common/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import AppCommon from '~/components/app-common'
+
+export default {
+  components: {
+    AppCommon
+  }
+}
+</script>
 
 <style>
 html
@@ -20,5 +31,13 @@ html
 {
   box-sizing: border-box;
   margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
