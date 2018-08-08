@@ -8,10 +8,10 @@
         <nav>
           <ul>
             <li class="nav-item">
-              <nuxt-link to="/profile" class="nav-text">略歴・Profile</nuxt-link>
+              <nuxt-link to="/profile" class="nav-text">プロフィール・Profile</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link to="/works" class="nav-text">実績・Works</nuxt-link>
+              <nuxt-link to="/works" class="nav-text">制作実績・Works</nuxt-link>
             </li>
             <li class="nav-item">
               <nuxt-link to="/contact" class="nav-text">お問い合わせ・Contact</nuxt-link>
