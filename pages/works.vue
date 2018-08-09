@@ -1,27 +1,78 @@
 <template>
   <div class="page">
     <ul class="page-inner works">
-      <li class="works-item">
+      <li
+        class="works-item"
+        @click="openAppModal({
+          image: '/images/image-1.jpg',
+          text: '山田花子 オフィシャルサイト を制作しました。'
+        })"
+      >
         <p class="works-text">
           山田花子<br>
           オフィシャルサイト
         </p>
       </li>
-      <li class="works-item">
+      <li
+        class="works-item"
+        @click="openAppModal({
+          image: '/images/image-2.jpg',
+          text: '山田製薬 社内管理ツール を制作しました。'
+        })"
+      >
         <p class="works-text">
           山田製薬<br>
           社内管理ツール
         </p>
       </li>
-      <li class="works-item">
+      <li
+        class="works-item"
+        @click="openAppModal({
+          image: '/images/image-3.jpg',
+          text: '株式会社 YAMADA コーポレートサイト を制作しました。'
+        })"
+      >
         <p class="works-text">
           株式会社 YAMADA<br>
           コーポレートサイト
         </p>
       </li>
     </ul>
+    <app-modal
+      :visible="appModalVisible"
+      :image="appModalImage"
+      :text="appModalText"
+      @click-outside="closeAppModal"
+    />
   </div>
 </template>
+
+<script>
+import AppModal from '~/components/app-modal'
+
+export default {
+  components: {
+    AppModal
+  },
+  data () {
+    return {
+      appModalVisible: false,
+      appModalImage: '',
+      appModalText: ''
+    }
+  },
+  methods: {
+    openAppModal ({ image, text }) {
+      this.appModalVisible = true,
+      this.appModalImage = image,
+      this.appModalText= text
+    },
+    closeAppModal () {
+      this.appModalVisible = false
+    }
+  }
+}
+</script>
 
 <style scoped>
 .works-item {
