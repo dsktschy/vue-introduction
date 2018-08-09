@@ -52,13 +52,13 @@ export default {
   background-position: center;
 }
 .image-1 {
-  background-image: url(~/assets/images/image-1.jpg);
+  background-image: url(/images/image-1.jpg);
 }
 .image-2 {
-  background-image: url(~/assets/images/image-2.jpg);
+  background-image: url(/images/image-2.jpg);
 }
 .image-3 {
-  background-image: url(~/assets/images/image-3.jpg);
+  background-image: url(/images/image-3.jpg);
 }
 .content {
   position: absolute;

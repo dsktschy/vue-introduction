@@ -39,13 +39,13 @@
     margin-top: 30px;
   }
   &:nth-child(1) {
-    background-image: url(~/assets/images/image-1.jpg);
+    background-image: url(/images/image-1.jpg);
   }
   &:nth-child(2) {
-    background-image: url(~/assets/images/image-2.jpg);
+    background-image: url(/images/image-2.jpg);
   }
   &:nth-child(3) {
-    background-image: url(~/assets/images/image-3.jpg);
+    background-image: url(/images/image-3.jpg);
   }
 }
 .works-text {
