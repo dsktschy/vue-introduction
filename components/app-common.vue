@@ -39,10 +39,10 @@ export default {
   width: 100vw;
   height: 100vh;
   padding: 40px;
-  transition: transform .3s ease;
+  transition: transform .6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .app-common-offset {
-  transform: translateX(-280px);
+  transform: translate3d(-280px, 0, 0);
 }
 .image {
   position: relative;
@@ -75,8 +75,8 @@ export default {
     display: block;
     width: 80px;
     height: 80px;
-    transform: rotate(63deg);
     background-color: rgba(255, 0, 0, .2);
+    animation: rotation 10s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite;
   }
 }
 .heading {

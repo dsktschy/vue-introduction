@@ -13,3 +13,8 @@
   overflow: hidden auto;
   text-align: right;
 }
+@keyframes rotation {
+  0% { transform: rotate(63deg) translateZ(0); }
+  50% { transform: rotate(calc(63deg + 45deg)) translateZ(0); }
+  100% { transform: rotate(calc(63deg + 90deg)) translateZ(0); }
+}
