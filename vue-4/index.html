@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, ::before, ::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* AppModal component */
+    .app-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, .7);
+    }
+    .app-modal-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 80vw;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url(images/image-1.jpg);
+    }
+    .app-modal-text {
+      position: absolute;
+      bottom: 36px;
+      right: 40px;
+      line-height: 1.5;
+      font-size: 16px;
+      font-weight: 900;
+      text-align: right;
+      color: #fff;
+    }
+  </style>
+  <title>vue-site</title>
+</head>
+<body>
+  <div id="app">
+    <app-modal></app-modal>
+  </div>
+
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+
+  <!-- AppModal component -->
+  <script type="text/x-template" id="app-modal">
+    <div class="app-modal">
+      <div class="app-modal-image">
+        <p class="app-modal-text">
+          {{text}}
+        </p>
+      </div>
+    </div>
+  </script>
+
+  <!-- Initialization -->
+  <script>
+    var AppModal = {
+      template: '#app-modal',
+      data: function () {
+        return {
+          text: 'Hello world!'
+        }
+      }
+    }
+    new Vue ({
+      el: '#app',
+      components: {
+        AppModal: AppModal
+      }
+    })
+  </script>
+</body>
+</html>
