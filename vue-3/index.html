@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, ::before, ::after { margin: 0; padding: 0; box-sizing: border-box; }
+    /* Your style here */
+  </style>
+  <title>vue-site</title>
+</head>
+<body>
+  <div id="app">
+    <app-text></app-text>
+  </div>
+
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+
+  <!-- AppText component -->
+  <script type="text/x-template" id="app-text">
+    <p>{{text}}</p>
+  </script>
+
+  <!-- Initialization -->
+  <script>
+    var appText = {
+      template: '#app-text',
+      data: function () {
+        return {
+          text: 'Hello world!'
+        }
+      }
+    }
+    new Vue ({
+      el: '#app',
+      components: {
+        appText: appText
+      }
+    })
+  </script>
+</body>
+</html>
