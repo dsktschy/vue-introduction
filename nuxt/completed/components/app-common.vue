@@ -1,6 +1,9 @@
 <template>
   <div :class="[ 'app-common', { 'app-common-offset': $route.path !== '/' } ]">
-    <div :class="[ 'image', `image-${imageNumber}` ]">
+    <div
+      class="image"
+      :style="{ 'background-image': `url(${image})` }"
+    >
       <div class="content">
         <h1 class="heading">
           <nuxt-link to="/">山田太郎・Taro YAMADA</nuxt-link>
@@ -25,9 +28,9 @@
 
 <script>
 export default {
-  props: {
-    imageNumber: { type: Number, default: 1 }
-  }
+  props: [
+    'image'
+  ]
 }
 </script>
 
@@ -50,15 +53,6 @@ export default {
   height: 100%;
   background-size: cover;
   background-position: center;
-}
-.image-1 {
-  background-image: url(/images/image-1.jpg);
-}
-.image-2 {
-  background-image: url(/images/image-2.jpg);
-}
-.image-3 {
-  background-image: url(/images/image-3.jpg);
 }
 .content {
   position: absolute;

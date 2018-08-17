@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-common :image-number="createImageNumber()"/>
+    <app-common :image="createImageUrl()"/>
     <nuxt/>
   </div>
 </template>
@@ -13,10 +13,11 @@ export default {
     AppCommon
   },
   methods: {
-    createImageNumber () {
+    createImageUrl () {
       const max = 3
       const min = 1
-      return Math.floor(Math.random() * (max + 1 - min) + min)
+      const number = Math.floor(Math.random() * (max + 1 - min) + min)
+      return `/images/image-${number}.jpg`
     }
   }
 }
