@@ -1,0 +1,41 @@
+/* Keyframes */
+@keyframes rotation {
+  0% { transform: rotate(63deg) translateZ(0); }
+  50% { transform: rotate(calc(63deg + 45deg)) translateZ(0); }
+  100% { transform: rotate(calc(63deg + 90deg)) translateZ(0); }
+}
+/* Reset and basic settings */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+html {
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* For page component */
+.page {
+  width: 280px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 40px 40px 40px 0;
+  display: flex;
+  align-items: center;
+}
+.page-inner {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden auto;
+  text-align: right;
+}
