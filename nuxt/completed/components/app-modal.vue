@@ -19,11 +19,11 @@
 
 <script>
 export default {
-  props: {
-    visible: { type: Boolean, default: false },
-    image: { type: String, default: '' },
-    text: { type: String, default: '' }
-  }
+  props: [
+    'visible',
+    'image',
+    'text'
+  ]
 }
 </script>
 

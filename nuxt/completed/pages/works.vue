@@ -2,40 +2,13 @@
   <div class="page">
     <ul class="page-inner works">
       <li
+        v-for="content of appModalContents"
+        :key="content.id"
         class="works-item"
-        @click="openAppModal({
-          image: '/images/image-1.jpg',
-          text: '山田花子 オフィシャルサイト を制作しました。'
-        })"
+        :style="{ 'background-image': `url(${content.image})` }"
+        @click="openAppModal(content)"
       >
-        <p class="works-text">
-          山田花子<br>
-          オフィシャルサイト
-        </p>
-      </li>
-      <li
-        class="works-item"
-        @click="openAppModal({
-          image: '/images/image-2.jpg',
-          text: '山田製薬 社内管理ツール を制作しました。'
-        })"
-      >
-        <p class="works-text">
-          山田製薬<br>
-          社内管理ツール
-        </p>
-      </li>
-      <li
-        class="works-item"
-        @click="openAppModal({
-          image: '/images/image-3.jpg',
-          text: '株式会社 YAMADA コーポレートサイト を制作しました。'
-        })"
-      >
-        <p class="works-text">
-          株式会社 YAMADA<br>
-          コーポレートサイト
-        </p>
+        <pre class="works-text">{{content.label}}</pre>
       </li>
     </ul>
     <app-modal
@@ -58,14 +31,34 @@ export default {
     return {
       appModalVisible: false,
       appModalImage: '',
-      appModalText: ''
+      appModalText: '',
+      appModalContents: [
+        {
+          id: 'content-1',
+          image: '/images/image-1.jpg',
+          label: '山田花子\nオフィシャルサイト',
+          text: '山田花子 オフィシャルサイト を制作しました。'
+        },
+        {
+          id: 'content-2',
+          image: '/images/image-2.jpg',
+          label: '山田製薬\n社内管理ツール',
+          text: '山田製薬 社内管理ツール を制作しました。'
+        },
+        {
+          id: 'content-3',
+          image: '/images/image-3.jpg',
+          label: '株式会社 YAMADA\nコーポレートサイト',
+          text: '株式会社 YAMADA コーポレートサイト を制作しました。'
+        }
+      ]
     }
   },
   methods: {
-    openAppModal ({ image, text }) {
+    openAppModal (content) {
       this.appModalVisible = true,
-      this.appModalImage = image,
-      this.appModalText= text
+      this.appModalImage = content.image,
+      this.appModalText= content.text
     },
     closeAppModal () {
       this.appModalVisible = false
@@ -88,15 +81,6 @@ export default {
   cursor: pointer;
   &:not(:first-child) {
     margin-top: 30px;
-  }
-  &:nth-child(1) {
-    background-image: url(/images/image-1.jpg);
-  }
-  &:nth-child(2) {
-    background-image: url(/images/image-2.jpg);
-  }
-  &:nth-child(3) {
-    background-image: url(/images/image-3.jpg);
   }
 }
 .works-text {
