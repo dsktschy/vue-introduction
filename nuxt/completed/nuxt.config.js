@@ -1,66 +1,32 @@
-const pkg = require('./package')
-
 module.exports = {
-  mode: 'universal',
-
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: '山田太郎・Taro YAMADA',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'フロントエンドエンジニア山田太郎 オフィシャルウェブサイト' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css' }
     ]
   },
-
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
-
-  /*
-  ** Global CSS
-  */
-  css: [
-    { src: '~/assets/css/style.css' }
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
-  ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-
+  loading: { color: '#ffffff' },
   /*
   ** Build configuration
   */
   build: {
     /*
-    ** You can extend webpack config here
+    ** Run ESLint on save
     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -69,5 +35,11 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  /*
+  ** Global CSS
+  */
+  css: [
+    '~/assets/css/style.css'
+  ]
 }
