@@ -21,24 +21,3 @@ export default {
   }
 }
 </script>
-
-<style>
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Noto Sans Japanese', sans-serif;
-}
-html {
-  font-size: 16px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-</style>
