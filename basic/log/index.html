@@ -10,11 +10,20 @@
   <title>Basic | Vue</title>
 </head>
 <body>
-  <!-- Your mark-up here -->
+  <div id="app">
+    <p>{{text}}</p>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
   <script>
-    /* Your script here */
+    new Vue ({
+      el: '#app',
+      data: function () {
+        return {
+          text: 'Hello world!'
+        }
+      }
+    })
   </script>
 </body>
 </html>
