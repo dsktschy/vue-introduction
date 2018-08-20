@@ -11,17 +11,25 @@
 </head>
 <body>
   <div id="app">
-    <p>{{text}}</p>
+    <app-text></app-text>
+    <app-text></app-text>
+    <app-text></app-text>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
   <script>
-    new Vue ({
-      el: '#app',
+    var AppText = {
+      template: '<p>{{text}}</p>',
       data: function () {
         return {
           text: 'Hello world!'
         }
+      }
+    }
+    new Vue ({
+      el: '#app',
+      components: {
+        AppText: AppText
       }
     })
   </script>
