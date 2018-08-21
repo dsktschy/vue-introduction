@@ -6,7 +6,7 @@ Vue CLIを導入し、モーダルウインドウのコンポーネントを開�
     * Vue CLIの導入。Vue.jsアプリケーションの雛形を構築します。
     * [[`vue create {app-name}` の実行結果](https://github.com/dsktschy/vue-introduction/commit/d78cf8d#diff-7d36e1b)]  
 * [Step-2](./step-2)  
-    * 単一ファイルコンポーネント（.vueファイル）の書式について。[Step-3/Basic](../basic/step-3)を移植します。
+    * 単一ファイルコンポーネント（.vueファイル）の書式について。[Basic/Step-3](../basic/step-3)で作成したコンポーネントを移植します。
     * [[Step-1からの変更点](https://github.com/dsktschy/vue-introduction/commit/64563f7#diff-7d36e1b)]  
 * [Step-3](./step-3)  
     * Scoped CSSについて。モーダルウインドウを表現するAppModalコンポーネントを作成します。
