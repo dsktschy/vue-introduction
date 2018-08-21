@@ -1,3 +1,3 @@
 <template>
-  <p>index</p>
+  <p>profile</p>
 </template>
