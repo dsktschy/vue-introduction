@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <app-text></app-text>
-    <app-text></app-text>
-    <app-text></app-text>
+    <app-modal></app-modal>
   </div>
 </template>
 
 <script>
-import AppText from './components/app-text.vue'
+import AppModal from './components/app-modal.vue'
 
 export default {
   components: {
-    AppText: AppText
+    AppModal: AppModal
   }
 }
 </script>
