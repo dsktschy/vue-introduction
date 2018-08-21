@@ -1,3 +1,3 @@
 <template>
-  <p>index</p>
+  <div/>
 </template>
