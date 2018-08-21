@@ -2,26 +2,70 @@
   <div class="page">
     <ul class="page-inner works">
       <li
+        v-for="content of appModalContents"
+        :key="content.id"
         class="works-item"
-        :style="{ 'background-image': `url(/images/image-1.jpg)` }"
+        :style="{ 'background-image': `url(${content.image})` }"
+        @click="openAppModal(content)"
       >
-        <pre class="works-text">Work-1</pre>
-      </li>
-      <li
-        class="works-item"
-        :style="{ 'background-image': `url(/images/image-2.jpg)` }"
-      >
-        <pre class="works-text">Work-2</pre>
-      </li>
-      <li
-        class="works-item"
-        :style="{ 'background-image': `url(/images/image-3.jpg)` }"
-      >
-        <pre class="works-text">Work-3</pre>
+        <pre class="works-text">{{content.label}}</pre>
       </li>
     </ul>
+    <app-modal
+      :visible="appModalVisible"
+      :image="appModalImage"
+      :text="appModalText"
+      @click-outside="closeAppModal"
+    />
   </div>
 </template>
+
+<script>
+import AppModal from '~/components/app-modal'
+
+export default {
+  components: {
+    AppModal
+  },
+  data () {
+    return {
+      appModalVisible: false,
+      appModalImage: '',
+      appModalText: '',
+      appModalContents: [
+        {
+          id: 'content-1',
+          image: '/images/image-1.jpg',
+          label: '山田花子\nオフィシャルサイト',
+          text: '山田花子 オフィシャルサイト を制作しました。'
+        },
+        {
+          id: 'content-2',
+          image: '/images/image-2.jpg',
+          label: '山田製薬\n社内管理ツール',
+          text: '山田製薬 社内管理ツール を制作しました。'
+        },
+        {
+          id: 'content-3',
+          image: '/images/image-3.jpg',
+          label: '株式会社 YAMADA\nコーポレートサイト',
+          text: '株式会社 YAMADA コーポレートサイト を制作しました。'
+        }
+      ]
+    }
+  },
+  methods: {
+    openAppModal (content) {
+      this.appModalVisible = true,
+      this.appModalImage = content.image,
+      this.appModalText= content.text
+    },
+    closeAppModal () {
+      this.appModalVisible = false
+    }
+  }
+}
+</script>
 
 <style scoped>
 .works-item {
