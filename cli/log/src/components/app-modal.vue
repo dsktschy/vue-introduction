@@ -1,5 +1,9 @@
 <template>
-  <div class="app-modal" v-show="visible">
+  <div
+    class="app-modal"
+    v-show="visible"
+    @click.self="$emit('click-outside')"
+  >
     <div class="image">
       <p class="text">
         {{text}}
