@@ -1,18 +1,20 @@
 <template>
-  <div
-    class="app-modal"
-    v-show="visible"
-    @click.self="$emit('click-outside')"
-  >
+  <transition>
     <div
-      class="image"
-      :style="{ 'background-image': `url(${image})` }"
+      class="app-modal"
+      v-show="visible"
+      @click.self="$emit('click-outside')"
     >
-      <p class="text">
-        {{text}}
-      </p>
+      <div
+        class="image"
+        :style="{ 'background-image': `url(${image})` }"
+      >
+        <p class="text">
+          {{text}}
+        </p>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -35,6 +37,12 @@ export default {
   z-index: 10;
   background-color: rgba(0, 0, 0, .7);
 }
+.app-modal.v-enter-active { transition: opacity .1s linear; }
+.app-modal.v-enter        { opacity: 0; }
+.app-modal.v-enter-to     { opacity: 1; }
+.app-modal.v-leave-active { transition: opacity .4s linear; }
+.app-modal.v-leave        { opacity: 1; }
+.app-modal.v-leave-to     { opacity: 0; }
 .image {
   position: absolute;
   top: 50%;
