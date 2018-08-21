@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-modal></app-modal>
+    <app-modal :visible="appModalVisible"></app-modal>
   </div>
 </template>
 
@@ -10,6 +10,11 @@ import AppModal from './components/app-modal.vue'
 export default {
   components: {
     AppModal: AppModal
+  },
+  data: function () {
+    return {
+      appModalVisible: false
+    }
   }
 }
 </script>

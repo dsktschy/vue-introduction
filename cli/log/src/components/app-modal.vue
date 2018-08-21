@@ -1,5 +1,5 @@
 <template>
-  <div class="app-modal">
+  <div class="app-modal" v-show="visible">
     <div class="image">
       <p class="text">
         {{text}}
@@ -10,6 +10,9 @@
 
 <script>
 export default {
+  props: [
+    'visible'
+  ],
   data: function () {
     return {
       text: 'Hello world!'
