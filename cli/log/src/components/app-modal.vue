@@ -4,7 +4,10 @@
     v-show="visible"
     @click.self="$emit('click-outside')"
   >
-    <div class="image">
+    <div
+      class="image"
+      :style="{ 'background-image': `url(${image})` }"
+    >
       <p class="text">
         {{text}}
       </p>
@@ -15,13 +18,10 @@
 <script>
 export default {
   props: [
-    'visible'
-  ],
-  data: function () {
-    return {
-      text: 'Hello world!'
-    }
-  }
+    'visible',
+    'image',
+    'text'
+  ]
 }
 </script>
 
@@ -45,7 +45,6 @@ export default {
   height: 80vh;
   background-size: cover;
   background-position: center;
-  background-image: url(/images/image-1.jpg);
 }
 .text {
   position: absolute;
