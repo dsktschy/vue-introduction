@@ -6,7 +6,7 @@ Vue CLIを導入し、モーダルウインドウのコンポーネントを開�
 * [Step-1](./step-1)  
     * Vue CLIの導入。  
       Vue.jsアプリケーションの雛形を構築します。  
-    * [[`vue create {app-name}` の実行結果](https://github.com/dsktschy/vue-introduction/commit/d78cf8d#diff-7d36e1b?diff=split)]  
+    * [[`vue create app-name` の実行結果](https://github.com/dsktschy/vue-introduction/commit/d78cf8d#diff-7d36e1b?diff=split)]  
 * [Step-2](./step-2)  
     * 単一ファイルコンポーネント（.vueファイル）の書式について。  
       [Basic/Step-3](../basic/step-3)で作成したコンポーネントを移植します。  

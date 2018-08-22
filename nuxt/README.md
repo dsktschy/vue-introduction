@@ -6,7 +6,7 @@ Nuxt.jsを導入し、ポートフォリオサイトを開発します。
 * [Step-1](./step-1)  
     * Nuxt.jsの導入。  
       Nuxt.jsの雛形を構築します。  
-    * [[`vue init nuxt-community/starter-template {app-name}` の実行結果](https://github.com/dsktschy/vue-introduction/commit/18dfe5a#diff-de392a4?diff=split)]  
+    * [[`vue init nuxt-community/starter-template app-name` の実行結果](https://github.com/dsktschy/vue-introduction/commit/18dfe5a#diff-de392a4?diff=split)]  
 * [Step-2](./step-2)  
     * layoutsディレクトリとpagesディレクトリ。  
       ポートフォリオサイトを構成する4つのページを作成し、ページ間で共用されるパーツを作成します。  
