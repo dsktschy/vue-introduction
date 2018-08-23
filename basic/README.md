@@ -6,15 +6,15 @@
 * [Step-1](./step-1)  
     * Vue.jsの読み込み。  
       ページ上でVue.jsを利用可能にします。  
-    * [[作成するファイル](https://github.com/dsktschy/vue-introduction/commit/310722b#diff-a3a7a8f?diff=split)]  
+    * [[変更点と解説]](https://github.com/dsktschy/vue-introduction/commit/310722b#diff-a3a7a8f?diff=split)]  
 * [Step-2](./step-2)  
     * Vueインスタンスの作成。  
       テキストを表示します。  
-    * [[Step-1からの変更点](https://github.com/dsktschy/vue-introduction/commit/a76498a#diff-a3a7a8f?diff=split)]  
+    * [[変更点と解説](https://github.com/dsktschy/vue-introduction/commit/a76498a#diff-a3a7a8f?diff=split)]  
 * [Step-3](./step-3)  
     * Vueコンポーネントの作成。  
       パーツを再利用します。  
-    * [[Step-2からの変更点](https://github.com/dsktschy/vue-introduction/commit/27f7af4#diff-a3a7a8f?diff=split)]  
+    * [[変更点と解説](https://github.com/dsktschy/vue-introduction/commit/27f7af4#diff-a3a7a8f?diff=split)]  
 
 ## Vue.jsとは
 * 公式にはフレームワーク。ライブラリとも言われている
