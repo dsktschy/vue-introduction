@@ -1,6 +1,6 @@
 # CLI  
 Vue CLIを導入し、モーダルウインドウのコンポーネントを開発します。  
-[完成形](https://vue-introduction-cli.netlify.com)
+[[完成形](https://vue-introduction-cli.netlify.com)]
 
 ## 構成
 * [Step-1](./step-1)  

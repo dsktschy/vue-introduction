@@ -6,13 +6,13 @@ Vue.js自体についてのより詳細な解説は、[公式ドキュメント]
 ## 構成
 1. [Basic](./basic)  
     * 最小のコードを作成し、Vue.jsの基本的な挙動を確認します。  
-    * [完成形](https://vue-introduction-basic.netlify.com)
+    * [[完成形](https://vue-introduction-basic.netlify.com)]
 2. [CLI](./cli)  
     * Vue CLIを導入し、モーダルウインドウのコンポーネントを開発します。  
-    * [完成形](https://vue-introduction-cli.netlify.com)
+    * [[完成形](https://vue-introduction-cli.netlify.com)]
 3. [Nuxt](./nuxt)  
     * Nuxt.jsを導入し、ポートフォリオサイトを開発します。  
-    * [完成形](https://vue-introduction-nuxt.netlify.com)
+    * [[完成形](https://vue-introduction-nuxt.netlify.com)]
 
 ## 前提知識
 * HTML

@@ -1,6 +1,6 @@
 # Nuxt  
 Nuxt.jsを導入し、ポートフォリオサイトを開発します。  
-[完成形](https://vue-introduction-nuxt.netlify.com)
+[[完成形](https://vue-introduction-nuxt.netlify.com)]
 
 ## 構成
 * [Step-1](./step-1)  

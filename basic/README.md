@@ -1,6 +1,6 @@
 # Basic
 最小のコードを作成し、Vue.jsの基本的な挙動を確認します。  
-[完成形](https://vue-introduction-basic.netlify.com)
+[[完成形](https://vue-introduction-basic.netlify.com)]
 
 ## 構成
 * [Step-1](./step-1)  
