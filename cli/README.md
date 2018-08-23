@@ -16,7 +16,7 @@ Vue CLIを導入し、モーダルウインドウのコンポーネントを開�
       モーダルウインドウを表現するAppModalコンポーネントを作成します。  
     * [[Step-2からの変更点](https://github.com/dsktschy/vue-introduction/commit/f7cf29d#diff-7d36e1b?diff=split)]  
 * [Step-4](./step-4)  
-    * ディレクティブとプロパティとバインディング。  
+    * ディレクティブとプロパティ。  
       モーダルウインドウの開閉状態を管理します。  
     * [[Step-3からの変更点](https://github.com/dsktschy/vue-introduction/commit/589fed4#diff-7d36e1b?diff=split)]  
 * [Step-5](./step-5)  
@@ -24,7 +24,7 @@ Vue CLIを導入し、モーダルウインドウのコンポーネントを開�
       モーダルウインドウをクリックによって開閉可能にします。  
     * [[Step-4からの変更点](https://github.com/dsktschy/vue-introduction/commit/bc564cc#diff-7d36e1b?diff=split)]  
 * [Step-6](./step-6)  
-    * 要素の反復とスタイルのバインディング。  
+    * 要素の反復とスタイルの動的な変更。  
       押下されたボタンに応じて、モーダルウインドウに異なる内容を表示します。  
     * [[Step-5からの変更点](https://github.com/dsktschy/vue-introduction/commit/e418c1b#diff-7d36e1b?diff=split)]  
 * [Step-7](./step-7)  
