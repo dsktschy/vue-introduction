@@ -6,7 +6,7 @@
 * [Step-1](./step-1)  
     * Vue.jsの読み込み。  
       ページ上でVue.jsを利用可能にします。  
-    * [[変更点と解説]](https://github.com/dsktschy/vue-introduction/commit/310722b#diff-a3a7a8f?diff=split)]  
+    * [[変更点と解説](https://github.com/dsktschy/vue-introduction/commit/310722b#diff-a3a7a8f?diff=split)]  
 * [Step-2](./step-2)  
     * Vueインスタンスの作成。  
       テキストを表示します。  
